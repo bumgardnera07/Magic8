@@ -3,24 +3,24 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Look up your Bloc schedule.",
+          "summary": "Ask a question, get an answer.",
           "examplePhrases": [
-            "Alexa open Bloc Schedule Lookup",
-            "Alexa when is my next bloc mentor session",
-            "Alexa add my sessions to my calendar"
+            "Alexa enable Magic Eight",
+            "Alexa ask Magic Eight to give me an answer",
+            "Alexa what is my fate?"
           ],
           "keywords": [
-            "Bloc",
-            "schedule",
-            "calendar"
+            "MagicEight",
+            "decision-making",
+            "skill"
           ],
-          "name": "Bloc Schedule Lookup",
-          "description": "Use Alexa to keep track of your Bloc schedule. You can also add your appointments to your google calendar"
+          "name": "Magic8",
+          "description": "Ask a question and I'll give you an answer"
         },
       },
       "isAvailableWorldwide": true,
-      "testingInstructions": "Use the following credentials to verify that the bloc api responds with real data",
-      "category": "CALENDAR",
+      "testingInstructions": "structured like a basic fact skill",
+      "category": "",
       "distributionCountries": []
     },
     "apis": {

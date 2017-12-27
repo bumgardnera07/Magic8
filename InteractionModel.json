@@ -14,25 +14,15 @@
         "samples": []
       },
       {
-        "name": "ScheduleLookup",
+        "name": "MagicEight",
         "samples": [
-          "Look up my Bloc Schedule",
-          "What is my Bloc Schedule",
-          "When is my next mentor meeting",
-          "When is my next Bloc meeting",
-          "What is my mentor schedule",
-          "whens my next meeting",
-          "mentor schedule",
-          "bloc schedule",
-          "when is my next mentor session",
-          "bloc session",
-          "mentor session",
-          "Lookup my mentor schedule",
-          "look up my bloc sessions"
+          "Magic Eight",
+          "Give me an answer",
+          "what is my fate?"
         ],
         "slots": []
       }
     ],
-    "invocationName": "bloc mentor schedule"
+    "invocationName": "magic eight"
   }
 }
