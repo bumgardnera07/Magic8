@@ -7,7 +7,7 @@
 'use strict';
 const Alexa = require('alexa-sdk');
 
-const APP_ID = 'amzn1.ask.skill.cf45805e-e739-4f93-8fca-cfe058cd97fe';
+const APP_ID = undefined;
 
 const SKILL_NAME = 'Magic8';
 const GET_ANS_MESSAGE = "Magic Eight says:";
@@ -48,9 +48,9 @@ exports.handler = function(event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewAnsIntent');
+        this.emit('MagicEight');
     },
-    'GetNewAnsIntent': function () {
+    'MagicEight': function () {
         const AnsArr = data;
         const AnsIndex = Math.floor(Math.random() * AnsArr.length);
         const randomAns = AnsArr[AnsIndex];
