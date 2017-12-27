@@ -1,18 +1,17 @@
 {
-  "name": "skill-sample-nodejs-fact-i18n",
+  "name": "Magic8",
   "version": "1.0.0",
-  "description": "I18n version of fact skill.",
+  "description": "Ask me a yes or no question.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "alexa",
-    "skill",
-    "fact"
+    "Magic",
+    "decision-making",
+    "skill"
   ],
-  "author": "Amazon.com",
-  "license": "Apache-2.0",
+  "author": "George Bumgardner",
   "dependencies": {
     "alexa-sdk": "^1.0.12"
   }

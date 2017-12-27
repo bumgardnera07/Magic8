@@ -1,52 +1,43 @@
 /* eslint-disable  func-names */
 /* eslint quote-props: ["error", "consistent"]*/
 /**
- * This sample demonstrates a simple skill built with the Amazon Alexa Skills
- * nodejs skill development kit.
- * This sample supports multiple lauguages. (en-US, en-GB, de-DE).
- * The Intent Schema, Custom Slots and Sample Utterances for this skill, as well
- * as testing instructions are located at https://github.com/alexa/skill-sample-nodejs-fact
- **/
+/* eslint-disable  func-names */
+/* eslint quote-props: ["error", "consistent"]*/
 
 'use strict';
 const Alexa = require('alexa-sdk');
 
-//=========================================================================================================================================
-//TODO: The items below this comment need your attention.
-//=========================================================================================================================================
+const APP_ID = 'amzn1.ask.skill.cf45805e-e739-4f93-8fca-cfe058cd97fe';
 
-//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
-//Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
-const APP_ID = undefined;
-
-const SKILL_NAME = 'Joe Pesci Facts';
-const GET_FACT_MESSAGE = "Here's your fact: ";
-const HELP_MESSAGE = 'You can say tell me a Joe Pesci fact, or, you can say exit... What can I help you with?';
+const SKILL_NAME = 'Magic8';
+const GET_ANS_MESSAGE = "Magic Eight says:";
+const HELP_MESSAGE = 'You can say ask Magic Eight, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
-//=========================================================================================================================================
-//TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-node-js-fact/lambda/data
-//=========================================================================================================================================
-const data = [
-    'Joe Pesci was originally casted to star alongside Arnold Schwarzeneggar in the 1996 file Jingle All the Way, but was later replaced by Sinbad.',
-    'Joe Pesci was a character in the 2005 Broadway hit Jersey Boys.',
-    'Joe Pesci is from Newark, New Jersey.',
-    'Joe Pesci gave one of the shortest Academy Award acceptance speeches of all time.',
-    'Joe Pesci was nominated for an Academy Award early in his acting career for his role in Raging Bull.',
-    'Joe Pesci is a long time collaborator of Robert DeNiro and Martin SCorsese.',
-    'A young Joe Pesci was a regular on a TV variety show called Startime Kids.',
-    'Joe Pesci released a pop cover album called Little Joe Sure Can Sing.',
-    'Joe Pesci worked for some time as a barber.',
-    'Joe Pescis mother was a barber.',
-    'Joe Pescis fathers name was Angelo.',
-    'Joe Pescis film debut was in a 1976 crime drama that first earned him the attention of Martin Scorses and Robert DeNiro.',
-    'Joe Pesci won an academy award for best supporting actor for his role in Good Fellas.',
-];
 
-//=========================================================================================================================================
-//Editing anything below this line might break your skill.
-//=========================================================================================================================================
+const data = [
+    'It is certain',
+    'It is decidedly so',
+    'Without a doubt',
+    'of course',
+    'Count on it',
+    'yes yes yes',
+    'Yes',
+    'Looks to be so',
+    'Absolutely',
+    'It seems so',
+    'Not sure, try again',
+    'Ask again later',
+    'Better not to say',
+    'Concentrate and Ask Again',
+    'Look within',
+    'No',
+    'not likely',
+    'very doubtful',
+    'impossible',
+    'No way',
+];
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context);
@@ -57,15 +48,15 @@ exports.handler = function(event, context, callback) {
 
 const handlers = {
     'LaunchRequest': function () {
-        this.emit('GetNewFactIntent');
+        this.emit('GetNewAnsIntent');
     },
-    'GetNewFactIntent': function () {
-        const factArr = data;
-        const factIndex = Math.floor(Math.random() * factArr.length);
-        const randomFact = factArr[factIndex];
-        const speechOutput = GET_FACT_MESSAGE + randomFact;
+    'GetNewAnsIntent': function () {
+        const AnsArr = data;
+        const AnsIndex = Math.floor(Math.random() * AnsArr.length);
+        const randomAns = AnsArr[AnsIndex];
+        const speechOutput = GET_ANS_MESSAGE + randomAns;
 
-        this.response.cardRenderer(SKILL_NAME, randomFact);
+        this.response.cardRenderer(SKILL_NAME, randomAns);
         this.response.speak(speechOutput);
         this.emit(':responseReady');
     },
