@@ -1,0 +1,49 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "Joe Pesci facts",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "Help"
+            "Help Me"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "Stop"
+            "Alexa Stop"
+          ]
+        },
+        {
+          "name": "GetNewFactIntent",
+          "samples": [
+            "a fact",
+            "a Joe Pesci fact",
+            "tell me a fact",
+            "tell me a Joe Pesci fact",
+            "give me a fact",
+            "give me a Joe Pesci fact",
+            "tell me trivia",
+            "tell me a Joe Pesci trivia",
+            "give me trivia",
+            "give me a Joe Pesci trivia",
+            "give me some information",
+            "give me some Joe Pesci information",
+            "tell me something",
+            "give me something"
+          ],
+          "slots": []
+        }
+      ]
+    }
+  }
+}

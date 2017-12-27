@@ -1,0 +1,43 @@
+{
+  "skillManifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Look up your Bloc schedule.",
+          "examplePhrases": [
+            "Alexa open Bloc Schedule Lookup",
+            "Alexa when is my next bloc mentor session",
+            "Alexa add my sessions to my calendar"
+          ],
+          "keywords": [
+            "Bloc",
+            "schedule",
+            "calendar"
+          ],
+          "name": "Bloc Schedule Lookup",
+          "description": "Use Alexa to keep track of your Bloc schedule. You can also add your appointments to your google calendar"
+        },
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Use the following credentials to verify that the bloc api responds with real data",
+      "category": "CALENDAR",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

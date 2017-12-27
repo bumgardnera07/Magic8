@@ -1,0 +1,38 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "ScheduleLookup",
+        "samples": [
+          "Look up my Bloc Schedule",
+          "What is my Bloc Schedule",
+          "When is my next mentor meeting",
+          "When is my next Bloc meeting",
+          "What is my mentor schedule",
+          "whens my next meeting",
+          "mentor schedule",
+          "bloc schedule",
+          "when is my next mentor session",
+          "bloc session",
+          "mentor session",
+          "Lookup my mentor schedule",
+          "look up my bloc sessions"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "bloc mentor schedule"
+  }
+}
